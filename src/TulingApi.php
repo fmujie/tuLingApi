@@ -29,11 +29,11 @@ class TulingApi{
      * @param $text string 合成的文本
      * @param $userId string 用户唯一标识
      * @param $city string 所在城市
-     * @param $province 所在省份
-     * @param $street 所在路段
-     * @return array
+     * @param $province string 所在省份
+     * @param $street string 所在路段
+     * @return response
      */
-     public static function tulingConversation(Request $request, $text = null, $userId = 1, $city = '淄博', $province = 'province', $street = '新村西路')
+     public static function txtConversation(Request $request, $text = null, $userId = 1, $city = '淄博', $province = 'province', $street = '新村西路')
      {
          $config = self::loadConfig();
          $tulingApiKey = $config['tulingApiKey'];
