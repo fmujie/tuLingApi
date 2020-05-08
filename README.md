@@ -5,7 +5,7 @@
  1. 安装包文件
 
 	``` bash
-	$ composer require composer require fmujie/tuling
+	$ composer require fmujie/tuling
 	```
 
 ## 配置
