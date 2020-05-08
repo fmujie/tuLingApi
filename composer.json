@@ -1,0 +1,19 @@
+{
+    "name": "fmujie/tuling",
+    "description": "Packaging Turing API for larael",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fmujie",
+            "email": "fmujie182@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fmujie\\TulingApi\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
