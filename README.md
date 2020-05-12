@@ -34,7 +34,6 @@
 
 	- `TULING_API_KEY`：图灵`ApiKey`。
 
-
 ## 使用
 
 1. 文本交流
@@ -71,7 +70,9 @@
         public function test(Request $request)
         {
             $res = TulingApi::txtConversation($request, '我爱你');
-            return $res;
+            return response()->json([
+                'result' => $this->return
+            ], $this->statusCode);
         }
     }
     ~~~
@@ -80,10 +81,12 @@
     
     ~~~json
     {
-        "code": 1,
-        "status": "success",
-        "msg": "请求成功",
-        "data": "我爱你，爱着你，就像老鼠爱大米"
+        "result": {
+            "code": 1,
+            "status": "success",
+            "msg": "请求成功",
+            "data": "我也喜欢你啦～"
+        }
     }
     ~~~
     
